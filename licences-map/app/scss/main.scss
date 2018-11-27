@@ -1,0 +1,233 @@
+@import 'gds-variables';
+@import 'bootstrap';
+
+#header {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container {
+    display: flex;
+}
+
+#map {
+    width: 100%;
+    max-width: 1000px;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#listContainer {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+}
+
+#licencesListHeaders {
+
+    font-weight: bolder;
+    .licence-list-item {
+        padding: 0 18px;
+    }
+
+}
+
+.action-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 15px;
+}
+
+#licencesList {
+    height: 30vh;
+    overflow: scroll;
+}
+
+.licence-list-item {
+    z-index: 2;
+    font-size: 16px;
+    .licence-core-details {
+        display: flex;
+        z-index: 1;
+
+        & > div {
+            padding: 2px;
+            z-index: 1;
+        }
+
+        .type-section {
+            width: 130px;
+            padding-right: 15px;
+            .extension-alert {
+                z-index: 1;
+                font-weight: bolder;
+            }
+        }
+        .location-section {
+            width: 200px;
+        }
+        .customer-section {
+            width: 350px;
+            padding: 0 15px;
+        }
+    }
+    &:not(.header-item):hover {
+        background: #0873b2;
+        color: white;
+        cursor: pointer;
+        .ext-notice {
+            color: black;
+        }
+    }
+    &:focus {
+        border: orange 2px solid;
+        background:none;
+        color:black;
+    }
+}
+
+#container {
+    display: block;
+}
+
+.data-container {
+    height: 26%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
+#listContainer {
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
+.selected {
+    background-color: #0873b2 !important;
+    color: white !important;
+    &.red{
+        border-left:solid red 10px;
+    }
+    &.yellow{
+        border-left:solid orange 10px;
+    }
+    &.green{
+        border-left:solid green 10px;
+    }
+        
+
+}
+
+#headingContent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 0 10px;
+    max-width: 1000px;
+}
+
+#subHeading {
+    font-size: 32px;
+}
+
+#locateMeBtn {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+
+.radio-selection {
+    height: 30px;
+    margin-bottom: 20px;
+    .radio {
+        opacity: 0;
+    }
+    label {
+        position: relative;
+
+        padding: 5px 15px 5px 40px;
+        font-size: 16px;
+        text-align: center;
+        border: 1px solid black;
+        &:before {
+            position: absolute;
+            width: 30px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            content: "";
+            border-right: 1px solid;
+            background: white;
+        }
+        &:after {
+            position: absolute;
+            width: 10px;
+            height: 70%;
+            left: 10px;
+            top: 4px;
+            border-bottom: solid 2px black;
+            border-right: solid 2px black;
+            content: "";
+            transform: rotate(35deg);
+            opacity: 0;
+        }
+    }
+    input:checked + label {
+        color: white;
+        i {
+            opacity: 1;
+        }
+        background:black;
+        color:white;
+        &:after {
+            opacity: 1;
+        }
+    }
+}
+
+.ext-notice {
+    display: inline-block;
+    padding: 0 5px;
+    background: #FFEDCC;
+    font-weight: bolder;
+}
+
+.selected {
+    .ext-notice {
+        color: black;
+
+    }
+}
+
+.gm-ui-hover-effect {
+    img {
+        width: 40px !important;
+        height: 40px !important;
+        margin: 0 !important;
+    }
+}
+
+
+
+.green {
+   border-left: solid green 10px;
+}
+
+.yellow {
+     border-left: solid orange 10px;
+}
+
+.red {
+     border-left: solid red 10px;
+}

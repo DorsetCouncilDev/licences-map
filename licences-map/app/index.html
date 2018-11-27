@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+
+    <!--build:css css/styles.min.css-->
+    <link href="css/main.css" rel="stylesheet">
+    <!--endbuild-->
+
+
+    <!--build:js js/main.min.js -->
+    <script src="js/axios.min.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/clear-nodes.js"></script>
+    <script src="js/list-rendereing.js"></script>
+    <script src="js/markers.js"></script>
+    <script src="js/sorters.js"></script>
+    <script src="js/user-location.js"></script>
+    <script src="js/markerclusterer.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <header id="header">
+        <h1>Highways Licences</h1>
+        <button id="locateMeBtn" class="btn btn-light"><img src="images/person.png" width="40px"> Locate Me</button>
+    </header>
+    <div id="container">
+        <div id="map">
+        </div>
+        <div class="data-container">
+            <div id="listContainer">
+                <div id="headingContent">
+                    <h2 id="subHeading">Licences</h2>
+                    <div class="action-bar">
+                        <div id="orderLabel">ORDER:</div>
+
+                        <div class="radio-selection">
+
+                            <input type="radio" id="type" name="order" class="radio">
+                            <label for="type" id="confidentailLabel">By licence type
+   
+                            </label>
+                        </div>
+                        <div class="radio-selection">
+
+                            <input type="radio" name="order" id="endDate" class="radio">
+                            <label for="endDate" id="shareableLabel">By end date
+     
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <ul class="list-group" id="licencesListHeaders">
+                    <li class="list-group-item licence-list-item header-item">
+                        <div class="licence-core-details">
+                            <div class="type-section">Licence type</div>
+                            <div class="location-section">Site address</div>
+                            <div class="customer-section">Customer</div>
+                            <div class="date-section">End date</div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-group" id="licencesList">
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVLqUxdgLoBovYi83r-2YZNgvZFlsJR2g&callback=initMap" async defer></script>
+                                        
+</body>
+
+</html>

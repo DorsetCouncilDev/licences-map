@@ -1,0 +1,37 @@
+/**************************************************************************/
+/**************************************************************************/
+/**************************************************************************/
+/****   MODIFY BOOTSTRAP VARIABLES TO SET GDS ELEMENTS STYLING   **********/
+/****   https://govuk-elements.herokuapp.com/                    **********/
+
+$blue : #005ea5;
+$indigo : #6610f2;
+$purple : #2e358b;
+$pink : pink;
+$red : #b10e1e;
+$orange : orange;
+$yellow : yellow;
+$green : #006435;
+$teal : #20c997;
+$cyan : #17a2b8;
+
+$breadcrumb-bg : none;
+$breadcrumb-divider: ">";
+$breadcrumb-active-color: black;
+$breadcrumb-divider-color: darkgrey;
+    
+$warning: $orange;
+$enable-rounded : false;
+$enable-shadows : false;
+
+$font-size-base: 1rem * 1.1875;
+
+$input-focus-border-color: $orange;
+$input-btn-focus-color : $orange;
+$input-btn-focus-box-shadow : $orange;
+$input-border-width: 2px;
+$input-border-color: black;
+$border-radius : 0;
+$border-radius-lg : 0;
+$border-radius-sm : 0;
+$alert-border-level: 0;
